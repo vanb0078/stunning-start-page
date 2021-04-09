@@ -15,3 +15,52 @@ html {
 /*
 font-family: 'PT Sans Narrow', sans-serif;
 */
+
+body {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto 10em auto;
+  grid-template-rows: auto 1.5rem;
+  grid-template-areas:
+    "left center right"
+    ". center .";
+    margin-bottom: 1.5rem;
+}
+
+header h1 {
+  grid-area: center;
+  margin: 0;
+  z-index: 0;
+}
+
+nav {
+  background-color: #bd027d;
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0 1rem;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+nav a {
+  padding: .5em .8em;
+  background-color: #bd027d;
+  text-decoration: none;
+  font-family: PT Sans Narrow, sans-serif;
+  color: #eccee2;
+}
