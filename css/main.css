@@ -1,0 +1,17 @@
+html {
+  box-sizing: border-box;
+  line-height: 1.5;
+  background-color: #bebebe;
+  font-family: Georgia, serif;
+  color: #323232;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*
+font-family: 'PT Sans Narrow', sans-serif;
+*/
